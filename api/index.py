@@ -7,7 +7,8 @@ import io
 import os
 
 # Load model
-model = tf.keras.models.load_model(os.path.join(os.path.dirname(__file__), '..', 'flower-classification.keras'))
+model = tf.keras.models.load_model('flower-classification.keras')
+
 class_names = ['daisy', 'dandelion', 'rose', 'sunflower', 'tulip']  # Sesuaikan dengan class Anda
 
 app = Flask(__name__)
